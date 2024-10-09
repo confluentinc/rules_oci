@@ -180,6 +180,13 @@ _attrs = {
         """,
         allow_single_file = [".txt"],
     ),
+    "append_architecture_tag": attr.bool(
+        doc = """\
+        When `image` is an index, the remote tags will also be applied to the images in the index,
+        but with the architecture appended to the tag.
+        """,
+        default = False,
+    ),
     "_allowlist_function_transition": attr.label(
         default = "@bazel_tools//tools/allowlists/function_transition_allowlist",
     ),
@@ -222,6 +229,7 @@ def _impl(ctx):
         "{{jq_path}}": jq.jqinfo.bin.short_path,
         "{{image_dir}}": ctx.file.image.short_path,
         "{{fixed_args}}": "",
+        "{{append_architecture_tag}}": str(ctx.attr.append_architecture_tag),
     }
 
     if ctx.attr.repository:

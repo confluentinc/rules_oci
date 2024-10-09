@@ -2,3 +2,4 @@ bazel-*
 .bazelrc.user
 .DS_Store
 MODULE.bazel.lock
+.ijwb/

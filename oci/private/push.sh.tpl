@@ -75,12 +75,12 @@ if "${JQ}" -e '.manifests' "${BLOB_FILE}" > /dev/null && [ "${APPEND_ARCHITECTUR
       xargs -r -n1 -I {} "${CRANE}" tag ${VERBOSE} $(cat "${REFS}") "{}-${architecture}" < "${TAGS_FILE}"
     fi
   done
-else
-  for tag in "${TAGS[@]+"${TAGS[@]}"}"; do
-    "${CRANE}" tag ${VERBOSE} $(cat "${REFS}") "${tag}"
-  done
+fi
 
-  if [[ -e "${TAGS_FILE:-}" ]]; then
-    xargs -r -n1 "${CRANE}" tag ${VERBOSE} $(cat "${REFS}") < "${TAGS_FILE}"
-  fi
+for tag in "${TAGS[@]+"${TAGS[@]}"}"; do
+  "${CRANE}" tag ${VERBOSE} $(cat "${REFS}") "${tag}"
+done
+
+if [[ -e "${TAGS_FILE:-}" ]]; then
+  xargs -r -n1 "${CRANE}" tag ${VERBOSE} $(cat "${REFS}") < "${TAGS_FILE}"
 fi

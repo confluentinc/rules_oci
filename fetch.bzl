@@ -126,7 +126,7 @@ def fetch_images():
             "linux/arm64/v8",
             "linux/amd64",
         ],
-        digest = "sha256:67211c14fa74f070d27cc59d69a7fa9aeff8e28ea118ef3babc295a0428a6d21",
+        digest = "sha256:80dd3c3b9c6cecb9f1667e9290b3bc61b78c2678c02cbdae5f0fea92cc6734ab",
     )
 
     oci_pull(

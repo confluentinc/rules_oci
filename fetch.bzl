@@ -22,7 +22,7 @@ def fetch_images():
     # A multi-arch base image
     oci_pull(
         name = "distroless_static",
-        digest = "sha256:c3c3d0230d487c0ad3a0d87ad03ee02ea2ff0b3dcce91ca06a1019e07de05f12",
+        digest = "sha256:5c7e2b465ac6a2a4e5f4f7f722ce43b147dabe87cb21ac6c4007ae5178a1fa58",
         image = "gcr.io/distroless/static",
         platforms = [
             "linux/amd64",

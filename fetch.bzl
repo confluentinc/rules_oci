@@ -192,7 +192,7 @@ def fetch_images():
     oci_pull(
         name = "nvidia_k8s_device_plugin_image",
         # tag = "v0.14.4",
-        digest = "sha256:19c696958fe8a63676ba26fa57114c33149168bbedfea246fc55e0e665c03098",
+        digest = "sha256:964847cc3fd85ead286be1d74d961f53d638cd4875af51166178b17bba90192f",
         image = "nvcr.io/nvidia/k8s-device-plugin",
     )
 

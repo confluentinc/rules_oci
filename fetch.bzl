@@ -182,7 +182,7 @@ def fetch_images():
         name = "quay_clair_image",
         # tag = "4.7.2",
         image = "quay.io/projectquay/clair",
-        digest = "sha256:8d38ffa8fad72f4bc2647644284c16491cc2d375602519a1f963f96ccc916276",
+        digest = "sha256:51096e9231310b33cde3e113995d74b29f0e8b8a2995b9552af5b0b6e9e41cb0",
         platforms = [
             "linux/amd64",
             "linux/arm64",

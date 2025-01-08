@@ -21,7 +21,7 @@ oci_pull(
 
 oci_pull(
     name = "distroless_base_single_arch_no_platforms_attr",
-    digest = "sha256:71b79745bb79377e88d936fd362bf505ad9f278f6a613233f0be2f10b96b1b21",
+    digest = "sha256:c010d57c42bc138d052870a12fd2116d77076b86f580435d51dfca2a1ace08dd",
     image = "gcr.io/distroless/base",
 )
 

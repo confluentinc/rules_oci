@@ -61,8 +61,8 @@ def rules_oci_internal_deps():
 
     http_archive(
         name = "rules_multirun",
-        sha256 = "0e124567fa85287874eff33a791c3bbdcc5343329a56faa828ef624380d4607c",
-        url = "https://github.com/keith/rules_multirun/releases/download/0.9.0/rules_multirun.0.9.0.tar.gz",
+        sha256 = "1d130f696f69fc25fe93c42043e1ded52418ed78b0fdcae678e247adad8c36b1",
+        url = "https://github.com/keith/rules_multirun/releases/download/0.12.0/rules_multirun.0.12.0.tar.gz",
     )
 
     http_archive(

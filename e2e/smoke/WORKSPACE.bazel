@@ -16,9 +16,9 @@ http_archive(
 
 http_archive(
     name = "container_structure_test",
-    sha256 = "4fd1e0d4974fb95e06d0e94e6ceaae126382bf958524062db4e582232590b863",
-    strip_prefix = "container-structure-test-1.16.1",
-    urls = ["https://github.com/GoogleContainerTools/container-structure-test/archive/v1.16.1.zip"],
+    sha256 = "4cbb382d3d7edc97129f79f83196c95e6006d9063d9edbb33a2311ba9372ad39",
+    strip_prefix = "container-structure-test-1.19.3",
+    urls = ["https://github.com/GoogleContainerTools/container-structure-test/archive/v1.19.3.zip"],
 )
 
 load("@container_structure_test//:repositories.bzl", "container_structure_test_register_toolchain")

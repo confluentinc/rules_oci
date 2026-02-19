@@ -95,7 +95,7 @@ def fetch_images():
     oci_pull(
         name = "aws_lambda_python",
         # tag = "3.8"
-        digest = "sha256:46b3b8614b31761b24f56be1bb8c7ba191d9b9b4624bbf7f53ed7ddc696c928b",
+        digest = "sha256:37fbca4f0e1ab9a1f36f7ebb03fefdbe8e6ecc3e0d8687bc729d419cc4ab29a2",
         image = "public.ecr.aws/lambda/python",
     )
 

@@ -15,7 +15,7 @@ def fetch_images():
     # A single-arch base image
     oci_pull(
         name = "distroless_java",
-        digest = "sha256:161a1d97d592b3f1919801578c3a47c8e932071168a96267698f4b669c24c76d",
+        digest = "sha256:38e4b51e5fbd44e5b3f8d77bcc8ae573f265174249dad7316aa3a9ce0ada0cfc",
         image = "gcr.io/distroless/java17",
     )
 

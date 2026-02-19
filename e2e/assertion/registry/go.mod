@@ -1,9 +1,11 @@
 module example.com/auth
 
-go 1.19
+go 1.23.0
+
+toolchain go1.24.3
 
 require (
-	github.com/google/go-containerregistry v0.14.0
+	github.com/google/go-containerregistry v0.20.3
 	github.com/r3labs/diff/v3 v3.0.1
 )
 

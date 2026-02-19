@@ -40,7 +40,7 @@ def fetch_images():
     oci_pull(
         name = "ecr_lambda_python",
         image = "public.ecr.aws/lambda/python",
-        tag = "3.11.2024.01.25.10",
+        tag = "3.13.2025.05.04.05",
         platforms = [
             "linux/amd64",
             "linux/arm64/v8",

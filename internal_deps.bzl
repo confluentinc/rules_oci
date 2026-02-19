@@ -36,11 +36,11 @@ def rules_oci_internal_deps():
     # see https://github.com/bazelbuild/bazel-skylib/issues/250
     http_archive(
         name = "bazel_skylib",
-        sha256 = "07b4117379dde7ab382345c3b0f5edfc6b7cff6c93756eac63da121e0bbcc5de",
-        strip_prefix = "bazel-skylib-1.1.1",
+        sha256 = "bc283cdfcd526a52c3201279cda4bc298652efa898b10b4db0837dc51652756f",
+        strip_prefix = "bazel-skylib-1.7.1",
         urls = [
-            "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.1.1/bazel-skylib-1.1.1.tar.gz",
-            "https://github.com/bazelbuild/bazel-skylib/archive/1.1.1.tar.gz",
+            "https://mirror.bazel.build/github.com/bazelbuild/bazel-skylib/releases/download/1.7.1/bazel-skylib-1.7.1.tar.gz",
+            "https://github.com/bazelbuild/bazel-skylib/archive/1.7.1.tar.gz",
         ],
     )
 
